@@ -1,7 +1,6 @@
 import { Pattern } from "@/components/ui";
 import { 
   Search, 
-  Filter,
   Plus,
   Download,
   MoreVertical,
@@ -13,12 +12,8 @@ import {
   AlertTriangle,
   Eye,
   Edit,
-  Archive,
   ChevronDown,
-  Calendar,
-  User,
-  Building,
-  ArrowUpDown
+  Building
 } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
