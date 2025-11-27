@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { Toaster } from "sonner";
 import { ScrollToTop } from "@/components/ui";
-import { Home, Signup } from "@/pages";
+import { Home } from "@/pages";
+import { Signup } from "@/pages/auth";
 
 export default function App() {
   return (
