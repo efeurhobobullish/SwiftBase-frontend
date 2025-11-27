@@ -12,6 +12,7 @@ import {
   TrendingUp,
   AlertTriangle,
   CheckCircle2,
+  XCircle,
   Calendar,
   Filter,
   Download,
@@ -19,8 +20,7 @@ import {
   MoreVertical,
   ArrowUp,
   ArrowDown,
-  setActiveTab,
-  activeTab
+  Building
 } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -167,7 +167,6 @@ const activityLog = [
 
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("overview");
 
   const getStatusBadge = (status: string) => {
     const statusConfig = {
@@ -308,6 +307,11 @@ export default function Dashboard() {
               {/* Welcome Header */}
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8">
                 <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Building className="text-main" size={20} />
+                    <span className="text-lg font-semibold">ABC Company Dashboard</span>
+                    <span className="px-2 py-1 bg-main/10 text-main rounded-full text-xs">Business Account</span>
+                  </div>
                   <h1 className="text-2xl font-bold">Welcome back, John!</h1>
                   <p className="text-muted">Here's what's happening with your shipments today.</p>
                 </div>
@@ -320,6 +324,22 @@ export default function Dashboard() {
                     <Plus size={16} />
                     New Shipment
                   </button>
+                </div>
+              </div>
+
+              {/* Business Quick Stats */}
+              <div className="grid grid-cols-3 gap-4 mb-6">
+                <div className="text-center p-4 border border-line rounded-lg bg-secondary/30">
+                  <div className="text-2xl font-bold text-main">5</div>
+                  <div className="text-sm text-muted">Team Members</div>
+                </div>
+                <div className="text-center p-4 border border-line rounded-lg bg-secondary/30">
+                  <div className="text-2xl font-bold text-main">3</div>
+                  <div className="text-sm text-muted">Warehouses</div>
+                </div>
+                <div className="text-center p-4 border border-line rounded-lg bg-secondary/30">
+                  <div className="text-2xl font-bold text-main">$12.8K</div>
+                  <div className="text-sm text-muted">Monthly Spend</div>
                 </div>
               </div>
 
