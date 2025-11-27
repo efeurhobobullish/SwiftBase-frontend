@@ -3,6 +3,7 @@ import { Toaster } from "sonner";
 import { ScrollToTop } from "@/components/ui";
 import { Home } from "@/pages";
 import { Signup, Login } from "@/pages/auth";
+import { Dashboard } from "@/pages/main";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
        <Route path="/login" element={<Login />} />
+       <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </>
   );
