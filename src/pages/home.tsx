@@ -1,6 +1,6 @@
 import ModeToggle from "@/components/ui/mode-toggle";
 import { Pattern } from "@/components/ui";
-import { Github, ArrowRight, Search, Phone, MapPin, Clock, Shield, Truck, Plane, Ship } from "lucide-react";
+import {  ArrowRight, Phone, MapPin, Clock, Shield, Truck, Plane, Ship } from "lucide-react";
 
 // Mock data for services
 const services = [
