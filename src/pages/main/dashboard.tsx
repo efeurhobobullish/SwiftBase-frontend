@@ -12,7 +12,6 @@ import {
   TrendingUp,
   AlertTriangle,
   CheckCircle2,
-  XCircle,
   Calendar,
   Filter,
   Download,
